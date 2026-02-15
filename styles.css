@@ -148,6 +148,20 @@ body {
     background-color: #333;
 }
 
+.download-button.tertiary  {
+    background-color: transparent;
+    border: 1px solid #cbcac5;
+    color: #333;
+}
+
+.download-button.tertiary:hover {
+    background-color: #e6e5e0;
+}
+
+.download-button.tertiary:active {
+    background-color: #D8D6CE;
+}
+
 /* Dev badge — fixed top-center, subtle shadow */
 .page-label {
     position: fixed;
