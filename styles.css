@@ -1,9 +1,13 @@
+/* ==========================================================================
+   Base / Reset — removes default margins, padding; box-sizing for layout
+   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Page layout: centered, full-height, warm off-white background */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +18,7 @@ body {
     padding: 20px;
 }
 
+/* Cards wrapper — horizontal row, 24px gap, centered */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +28,7 @@ body {
     align-items: flex-start;
 }
 
+/* Single card — 320px width, warm beige bg, rounded corners */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +40,13 @@ body {
     flex-shrink: 0;
 }
 
+/* Card header area — title, price, features stacked vertically */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* Plan name (e.g. Hobby, Pro) */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +55,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Price wrapper — aligns amount + period on baseline */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +63,38 @@ body {
     align-items: baseline;
 }
 
+/* Main price value (e.g. $20, Free) */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Billing period (e.g. /mo.) — smaller, muted */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Spacing between features list and CTA button */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* "Includes:" or "Everything in Hobby, plus:" label */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Feature list — no bullets, custom checkmarks */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* Each feature row — flex for checkmark + text alignment */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +103,7 @@ body {
     color: #26251e;
 }
 
+/* Checkmark icon (✓) before each feature */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +111,7 @@ body {
     font-weight: 400;
 }
 
+/* CTA button — pill shape, sits at card bottom via margin-top: auto */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -117,6 +134,7 @@ body {
     background-color: #D8D6CE;
 }
 
+/* Primary variant — dark bg for main CTA (e.g. Get Pro) */
 .download-button.primary {
     background-color: #111;
     color: #fff;
@@ -130,6 +148,7 @@ body {
     background-color: #333;
 }
 
+/* Dev badge — fixed top-center, subtle shadow */
 .page-label {
     position: fixed;
     top: 16px;
